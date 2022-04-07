@@ -1,0 +1,16 @@
+@use './reset';
+@use '../components/components';
+@use './bootstrap/scss/bootstrap.scss';
+
+:root {
+    --grey-white: rgba(179, 174, 174, 0.5),;
+    --black-grey: #343a40;
+    --white: #fff;
+    --light-grey-1: #f3f3f3;
+}
+
+body {
+    background: #f7f9fd;
+    background-color: #f7f9fd;
+}
+
