@@ -1,21 +1,37 @@
 // Main SCSS -- START //
 .header {
-    background-color: #2d3727;
+    background-color: transparent;
+    background-color: rgba(0,0,0,.125);
+    backdrop-filter: blur(50px);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
-    height: 90px;
-    position: fixed;
+    height: 85px;
     width: 100%;
+    position: fixed;
     z-index: 20;
-    &__logo {
+    .header__logo-nav {
         padding: 0;
         margin: 0;
+    }
+    .header__collections-nav_2 {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        left: 95px;
+    }
+    .header__collections-nav_1 {
+        padding: 0;
+        margin: 0;
+    }
+    &__logo {
+        display: inline-block;
+        position: relative;
+        padding: 0 15px;
         a {
+            background-color: var(--black-grey);
             font-size: 2rem;
             color: white;
-            background-color: black;
             text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
             border: 2px solid transparent;
             border-radius: 50%;
@@ -24,52 +40,29 @@
             align-items: center;
             text-decoration: none;
             padding: 5px 15px;
-            transition: all 0.3s ease-in-out;
             &:hover {
-                transform: scale(1.1);
-                color: white;
-            }
-        }
-    }
-    &__collections-nav {
-        padding: 0;
-        margin: 0;
-        a {
-            padding: 0 25px;
-            color: white;
-            font-size: 1.5rem;
-            display: inline-block;
-            text-decoration: none;
-            transition: all 0.3s ease-in-out;
-            &:hover {
-                color: white;
-            }
-            &:after {
-                content: '';
-                position: absolute;
-                width: 100%;
-                transform: scaleX(0);
-                height: 2px;
-                bottom: 0;
-                left: 0;
-                background-color: #caa500;
-                transform-origin: bottom right;
-                transition: transform 0.25s ease-out;
-            }
-            &:hover:after {
-                transform: scaleX(1);
-                transform-origin: bottom left;
+                color: red;
             }
         }
     }
     &__collections-link {
         display: inline-block;
         position: relative;
+        a {
+            padding: 0 25px;
+            color: white;
+            font-size: 1.5rem;
+            display: inline-block;
+            text-decoration: none;
+            &:hover {
+                color: red;
+            }
+        }
     }
 }
 // Main SCSS -- END //
 
-@media (min-width: 1001px) and (max-width: 2000px) {
+@media (min-width: 1001px) and (max-width: 3000px) {
     .header {
         .header__mobile-menu-bar {
             display: none !important;
@@ -78,7 +71,10 @@
 }
 @media only screen and (max-width: 1000px) {
     .header {
-        .header__collections-nav {
+        .header__collections-nav_1 {
+            display: none;
+        }
+        .header__collections-nav_2 {
             display: none;
         }
         .header__mobile-menu-bar {
@@ -99,7 +95,6 @@
                 box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .5);
                 position: absolute;
                 padding: 20px;
-                padding-bottom: 35px;
                 display: block;
                 overflow: hidden;
                 align-items: center;
@@ -112,8 +107,8 @@
                         font-size: 2rem;
                         color: var(--white);
                         text-decoration: none;
-                        padding-top: 25px;
-                        padding-bottom: 5px;
+                        padding-top: 15px;
+                        padding-bottom: 15px;
                         padding-left: 50px;
                         padding-right: 50px;
                         transition: all 0.3s ease-in-out;
