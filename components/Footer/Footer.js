@@ -26,7 +26,7 @@ export default function footer() {
                                 </div>
                                 <div className='email-input'>
                                     <input type="email" placeholder='Email Address'></input>
-                                    <Link href="/"><i class="fa-solid fa-arrow-right-from-bracket"></i></Link>  
+                                    <Link href="/"><i className="fa-solid fa-arrow-right-from-bracket"></i></Link>  
                                 </div>
                             </div>
                         </div>

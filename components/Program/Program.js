@@ -16,7 +16,7 @@ export default function Program() {
                         <div className='program__info-col1 col-lg-6'>
                             <div className='program__col1-info'> 
                                 <h2>What we provide</h2>
-                                <p>Poutine food truck la croix pinterest chicharrones venmo wolf tumblr DIY everyday carry pug. Franzen 90's viral locavore woke helvetica thundercats. Disrupt letterpress sartorial meggings synth YOLO hell of health goth glossier iPhone affogato tattooed vape. Skateboard direct trade locavore hexagon, raw denim 3 wolf moon tousled vaporware put a bird on it cray. Fam enamel pin mumblecore chambray taxidermy.</p>
+                                <p>Poutine food truck la croix pinterest chicharrones venmo wolf tumblr DIY everyday carry pug. Franzen 90s viral locavore woke helvetica thundercats. Disrupt letterpress sartorial meggings synth YOLO hell of health goth glossier iPhone affogato tattooed vape. Skateboard direct trade locavore hexagon, raw denim 3 wolf moon tousled vaporware put a bird on it cray. Fam enamel pin mumblecore chambray taxidermy.</p>
                             </div>
                         </div>
                         <div className='program__info-col2 col-lg-6'>
