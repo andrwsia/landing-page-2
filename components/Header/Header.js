@@ -9,22 +9,22 @@ export default function header() {
                 <li>
                     <ul className="mobile-menu-bar__sub">
                         <li className="header__collections-link">
-                            <a href="/">Home</a>
+                            <Link href="/">Home</Link>
                         </li>
                         <li className="header__collections-link">
-                            <a href="#program">Program</a>
+                            <Link href="#program">Program</Link>
                         </li>
                         <li className="header__collections-link">
-                            <a href="#gear">Gear</a>
+                            <Link href="#gear">Gear</Link>
                         </li>
                         <li className="header__collections-link">
-                            <a href="#supplements">Supplements</a>
+                            <Link href="#supplements">Supplements</Link>
                         </li>
                         <li className="header__collections-link">
-                            <a href="/">Sign In</a>
+                            <Link href="/">Sign In</Link>
                         </li>
                         <li className="header__collections-link">
-                            <a href="/">Cart</a>
+                            <Link href="/">Cart</Link>
                         </li>
                     </ul>
                 </li>
