@@ -6,6 +6,14 @@
 // Mixin -- END //
 
 // supplements -- START //
+.supplements::before { 
+    display: block; 
+    content: " "; 
+    margin-top: -75px; 
+    height: 75px; 
+    visibility: hidden; 
+    pointer-events: none;
+}
 .supplements {
     .supplements__container {
         background-color: black;
@@ -42,7 +50,7 @@
                 h1 {
                     @include padding_margin-reset;
                     color: white;
-                    font-size: 15vw;
+                    font-size: 6rem;
                     font-weight: 700;
                     text-transform: uppercase;
                 }
@@ -84,31 +92,36 @@
                     }
                 }
                 .supplements__items-col{
-                    @include padding_margin-reset;
                     position: relative;
-                    border: 5px solid transparent;
-                    border-radius: 25px;
                     .supplements__item {
+                        height: 100%;
+                        overflow: hidden;
                         background-color: white;
-                        border: 5px solid white;
                         border-radius: 25px;
-                        padding: 25px;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
                         align-items: center;
-                        height: 100%;
                         .supplements__item-img {
-                            border-bottom: 5px solid black;
                             img {
                                 object-fit: contain;
                                 object-position: 50% 50%;
                                 width: 100%;
-                                height: 100%;
+                                height: auto;
                             }    
                         }
+                        .supplements__item-divider {
+                            border: 2.5px solid black;
+                            background-color: black;
+                            width: 75%;
+                        }
                         .supplements__item-info {
-                            padding-top: 25px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: space-between;
+                            height: 100%;
+                            padding: 15px 25px;
                             p {
                                 @include padding_margin-reset;
                                 display: block;
@@ -125,3 +138,32 @@
     }
 }
 // supplements -- END //
+
+// MEDIA QUERIES -- START //
+@media only screen and (max-width: 525px) {
+    .supplements {
+        .supplements__container {
+            .supplements__title-container {
+                .supplements__title {
+                    h1 {
+                        font-size: 5rem;   
+                    }
+                }
+            }
+        }    
+    }  
+}
+@media only screen and (max-width: 435px) {
+    .supplements {
+        .supplements__container {
+            .supplements__title-container {
+                .supplements__title {
+                    h1 {
+                        font-size: 3.5rem;   
+                    }
+                }
+            }
+        }    
+    }  
+}
+// MEDIA QUERIES -- END //

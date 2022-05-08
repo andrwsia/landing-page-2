@@ -12,13 +12,13 @@ export default function header() {
                             <a href="/">Home</a>
                         </li>
                         <li className="header__collections-link">
-                            <a href="/">Program</a>
+                            <a href="#program">Program</a>
                         </li>
                         <li className="header__collections-link">
-                            <a href="/">Gear</a>
+                            <a href="#gear">Gear</a>
                         </li>
                         <li className="header__collections-link">
-                            <a href="/">Supplements</a>
+                            <a href="#supplements">Supplements</a>
                         </li>
                         <li className="header__collections-link">
                             <a href="/">Sign In</a>
@@ -46,13 +46,13 @@ export default function header() {
                     <Link href="/">Home</Link>
                 </li>
                 <li className="header__collections-link">
-                    <Link href="/">Program</Link>
+                    <Link href="#program">Program</Link>
                 </li>
                 <li className="header__collections-link">
-                    <Link href="/">Gear</Link>
+                    <Link href="#gear">Gear</Link>
                 </li>
                 <li className="header__collections-link">
-                    <Link href="/">Supplements</Link>
+                    <Link href="#supplements">Supplements</Link>
                 </li>
             </ul> 
         </header>

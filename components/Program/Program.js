@@ -9,9 +9,7 @@ export default function Program() {
                     <Image src="/pexels-li-sun.jpg" alt="pic" layout='fill'/>
                 </div>
                 <div className='program__title-container'>
-                    <div className='program__title'>
-                        <h1>Program</h1>
-                    </div>
+                    <h1>Program</h1>
                 </div>
                 <div className='program__info-container container'>
                     <div className='program__info-row row'>
@@ -40,90 +38,89 @@ export default function Program() {
                             </div>
                         </div>
                     </div>
-                    <div className='program__box-row row'>   
-                        <div className='program__box1 box col-sm-4'>
-                            <div className='box1-info box-info'>
+                    <div className='program__box-row row g-3'>   
+                        <div className='program__box-col col-5 col-md-4'>
+                            <div className='box-img'>
                                 <Image src="/anastase-maragos.jpg" alt="pic" layout='fill'> 
                                 </Image>
                             </div>
                         </div>
-                        <div className='program__box2 box col-sm-8'>
-                            <div className='box2-info box-info'> 
+                        <div className='program__box-col col-7 col-md-8'>
+                            <div className='box-img'> 
                                 <Image src="/russwole-rnm.jpg" alt="pic" layout='fill'> 
                                 </Image>
                             </div>
-                        </div> 
-                    </div>
-                    <div className='program__box-row row'>
-                        <div className='program__box3 box col-sm-8'>
-                            <div className='box3-info box-info'>
+                        </div>
+                        <div className='program__box-col col-7 col-md-8'>
+                            <div className='box-img'>
                                 <Image src="/gym-pic2.jpg" alt="pic" layout='fill'> 
                                 </Image>
                             </div>
                         </div> 
-                        <div className='program__box4 box col-sm-4'>
-                            <div className='box4-info box-info'>
+                        <div className='program__box-col col-5 col-md-4'>
+                            <div className='box-img'>
                                 <Image src="/gym-pic.jpg" alt="pic" layout='fill'> 
                                 </Image>
                             </div>
                         </div>    
                     </div>
-                    <div className='program__pricing-row row'>
+                    <div className='program__pricing-row row g-3'>
                         <div className='program__pricing-title col-sm-12'>
                             <div className='program__title-info'>
                                 <h3>Member Pricing plan</h3>
                                 <p>We provide pricing plans for new members, you can join the program after selecting the pricing plan option.</p>
                             </div>
                         </div>
-                        <div className='program__pricing-col col-sm-4'>
+                        <div className='program__pricing-col col-md-4'>
                             <div className='program__pricing-info'>
-                                <p>Daily plan <br></br> <span>$12</span></p>
-                                <ul>
-                                    <li>
-                                        <i class="fa-solid fa-circle-check"></i> Consultation with coach
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-circle-check"></i> 2 hours of practice
-                                    </li>
-                                </ul>
-                                <Link href="/">Join Now</Link>
+                                <div className='pricing-plan'>
+                                    <p>Basic plan <br></br> <span>$15</span></p>
+                                </div>
+                                    <div className='pricing-divider'></div>
+                                <div className='pricing-benefits'>
+                                    <p><i class="fa-solid fa-circle-check"></i> 2 hours of practice</p>
+                                    <p><i class="fa-solid fa-circle-check"></i> Free consultation to coaches</p>
+                                    <p><i class="fa-solid fa-circle-check"></i> Access to the FitClub Community</p>
+                                </div>
+                                <div className='pricing-link'>
+                                    <Link href="/">Join Now</Link>
+                                </div>
                             </div>
                         </div>
-                        <div className='program__pricing-col col-sm-4'>
+                        <div className='program__pricing-col col-md-4'>
                             <div className='program__pricing-info'>
-                                <p>Weekly plan <br></br> <span>$24</span></p>
-                                <ul>
-                                    <li>
-                                        <i class="fa-solid fa-circle-check"></i> Free consumption
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-circle-check"></i> Consultation with coach
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-circle-check"></i> 5 hours of practice
-                                    </li>
-                                </ul>
-                                <Link href="/">Join Now</Link>
+                                <div className='pricing-plan'>
+                                    <p>Pro plan <br></br> <span>$30</span></p>
+                                </div>
+                                    <div className='pricing-divider'></div>
+                                <div className='pricing-benefits'>
+                                    <p><i class="fa-solid fa-circle-check"></i> 5 hours of practice</p>
+                                    <p><i class="fa-solid fa-circle-check"></i> Free consultation to coaches</p>
+                                    <p><i class="fa-solid fa-circle-check"></i> Access to the FitClub Community</p>
+                                    <p><i class="fa-solid fa-circle-check"></i> Access to the minibar</p>
+                                </div>
+                                <div className='pricing-link'>
+                                    <Link href="/">Join Now</Link>
+                                </div>
                             </div>
                         </div>
-                        <div className='program__pricing-col col-sm-4'>
+                        <div className='program__pricing-col col-md-4'>
                             <div className='program__pricing-info'>
-                                <p>Monthly plan <br></br> <span>$32</span></p>
-                                <ul>
-                                    <li>
-                                        <i class="fa-solid fa-circle-check"></i> Free consumption
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-circle-check"></i> Consultation with coach
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-circle-check"></i> 8 hours of practice
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-circle-check"></i> Free fitness shirts
-                                    </li>
-                                </ul>
-                                <Link href="/">Join Now</Link>
+                                <div className='pricing-plan'>
+                                    <p>Premium plan <br></br> <span>$45</span></p>
+                                </div>
+                                    <div className='pricing-divider'></div>
+                                <div className='pricing-benefits'>
+                                    <p><i class="fa-solid fa-circle-check"></i> 8 hours of practice</p>
+                                    <p><i class="fa-solid fa-circle-check"></i> Free consultation to private coaches</p>
+                                    <p><i class="fa-solid fa-circle-check"></i> Access to the FitClub Community</p>
+                                    <p><i class="fa-solid fa-circle-check"></i> Access to the minibar</p>
+                                    <p><i class="fa-solid fa-circle-check"></i> Free fitness merchandise</p>
+
+                                </div>
+                                <div className='pricing-link'>
+                                    <Link href="/">Join Now</Link>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -135,7 +132,7 @@ export default function Program() {
                                 </div>
                                 <div className='promo__cta-input'>
                                     <input type="email" placeholder='Email Address'></input>
-                                    <Link href="/">Submit</Link>   
+                                    <Link href="/"><i class="fa-solid fa-arrow-right-from-bracket"></i></Link>  
                                 </div>
                             </div>
                         </div>

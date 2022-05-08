@@ -6,6 +6,14 @@
 // Mixin -- END //
 
 // Program -- START //
+.program::before { 
+    display: block; 
+    content: " "; 
+    margin-top: -75px; 
+    height: 75px; 
+    visibility: hidden; 
+    pointer-events: none;
+}
 .program {
     .program__container {
         background-color: black;
@@ -30,22 +38,18 @@
             position: relative;
             top: 0;
             left: 0;
-            width: 100vw;
+            // width: 100vw;
             height: 35vh;
             z-index: 2;
             display: flex;
             justify-content: center;
             align-items: center;
-            .program__title {
-                display: flex;
-                justify-content: center;
-                h1 {
-                    @include padding_margin-reset;
-                    color: white;
-                    font-size: 15vw;
-                    font-weight: 700;
-                    text-transform: uppercase;
-                }
+            h1 {
+                @include padding_margin-reset;
+                color: white;
+                font-size: 6rem;
+                font-weight: 700;
+                text-transform: uppercase;
             }
         }
         .program__info-container {
@@ -98,26 +102,25 @@
                             color: white;
                             font-size: 2rem;
                             padding-top: 7.5px;
+                            transition: all .3s ease-in-out;
+                            cursor: pointer;
+                            &:hover {
+                                color: red;
+                            }
                         }
                     }
                 }
             }
             .program__box-row {
-                position: relative;
-                display: flex;
-                .box {
-                    @include padding_margin-reset;
-                    border: 5px solid transparent;
-                    border-radius: 25px;
-                    .box-info {
-                        border: 5px solid transparent;
-                        border-radius: 25px;
-                        overflow: hidden;
-                        padding: 15px;
+                padding: 5px;
+                .program__box-col {
+                    position: relative;
+                    .box-img {
+                        position: relative;
                         width: 100%;
                         height: 40vh;
-                        position: relative;
                         img {
+                            border-radius: 25px;
                             object-fit: cover;
                             object-position: 50% 50%;
                             width: 100vw;
@@ -126,18 +129,9 @@
                         }
                     }
                 }
-                .program__box2 {
-                    .box2-info {
-                        border-radius: 25px;
-                        overflow: hidden;
-                        padding: 15px;
-                        width: 100%;
-                        height: 40vh;
-                    }
-                }
             }
             .program__pricing-row {
-                margin: 50px 0px;
+                margin: 50px auto;
                 .program__pricing-title {
                     display: flex;
                     justify-content: center;
@@ -157,52 +151,51 @@
                     }
                 }
                 .program__pricing-col {
-                    @include padding_margin-reset;
-                    border: 5px solid transparent;
-                    border-radius: 25px;
+                    position: relative;
                     .program__pricing-info {
+                        height: 100%;
                         background-color: var(--black-grey);
+                        color: white;
                         display: flex;
                         flex-direction: column;
-                        align-items: center;
                         justify-content: space-between;
-                        border: 1px solid transparent;
+                        align-items: center;
+                        padding: 15px;
                         border-radius: 25px;
-                        width: 100%;
-                        height: 50vh;
-                        p {
-                            @include padding_margin-reset;
-                            font-size: 1.75rem;
-                            color: white;
+                        .pricing-plan {
                             text-align: center;
-                            margin: 15px 0px;
-                            span {
-                                font-size: 2.75rem;
-                            }
+                            font-size: 2rem;
+                            font-weight: 700;
                         }
-                        ul {
-                            @include padding_margin-reset;
-                            border-top: 1px solid white;
-                            padding: 15px;
-                            height: 20vh;
-                            color: white;
-                            font-size: 1rem;
-                            line-height: 2rem
-                        }
-                        a {
-                            @include padding_margin-reset;
-                            text-decoration: none;
-                            color: white;
-                            font-size: 1rem;
-                            padding: 15px 25px;
+                        .pricing-divider {
                             border: 2.5px solid white;
-                            border-radius: 15px;
-                            margin: 15px 0px;
-                            transition: .3s ease-in-out;
-                            &:hover {
-                                background-color: white;
-                                color: var(--black-grey);
+                            background-color: white;
+                            width: 75%;
+                            margin-bottom: 1rem;
+                        }
+                        .pricing-benefits {
+                            height: 100%;
+                            font-size: 1.25rem;
+                        }
+                        .pricing-link {
+                            margin: 15px;
+                            display: flex;
+                            justify-content: space-between;
+                            a {
+                                text-decoration: none;
+                                color: white;
+                                text-align: center;
+                                font-size: 1.5rem;
+                                border: 2.5px solid white;
+                                border-radius: 25px;
+                                padding: 10px 20px;
+                                transition: all .3s ease-in-out;
+                                &:hover {
+                                    background-color: white;
+                                    color: var(--black-grey);
+                                }
                             }
+                            
                         }
                     }
                 }
@@ -218,9 +211,9 @@
                         justify-content: center;
                         align-items: center;
                         border-radius: 25px;
+                        padding: 15px;
                         .promo__cta {
                             color: white;
-                            margin: 10px 0px;
                             p {
                                 font-size: 6vw;
                                 font-weight: 700;
@@ -229,31 +222,30 @@
                         }
                         .promo__cta-input {
                             background-color: white;
-                            margin-bottom: 40px;
+                            border-radius: 5px;
                             padding: 15px;
-                            border: 1px solid transparent;
-                            border-radius: 25px;
+                            width: 50%;
+                            margin-bottom: 2rem;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: space-between;
                             input {
-                                border: 1px solid transparent;
-                                background-color: transparent;
+                                @include padding_margin-reset;
+                                background: transparent;
+                                outline: none;
+                                border: none;
                                 margin-right: 7.5px;
                             }
-                            a {
-                                border: 1px solid transparent;
-                                background-color: #FF0055;
-                                border-radius: 10px;
-                                padding: 5px 25px;
-                                text-decoration: none;
-                                color: white;
-                                font-size: 1rem;
-                                transition: .3s ease-in-out;
+                            i {
+                                @include padding_margin-reset;
+                                color: black;
+                                cursor: pointer;
                                 &:hover {
-                                    border: 1px solid #FF0055;
-                                    background-color: white;
-                                    color: #FF0055;
+                                    color: red;
                                 }
-                            }
-                        }    
+                            }    
+                        }  
                     }
                     
                 }
@@ -263,17 +255,41 @@
 }
 // Program -- END //
 
+// MEDIA QUERIES (TITLE B.P.) -- START //
+@media only screen and (max-width: 525px) {
+    .program {
+        .program__container {
+            .program__title-container {
+                h1 {
+                    font-size: 5rem;   
+                }
+            }
+        }    
+    }  
+}
+@media only screen and (max-width: 435px) {
+    .program {
+        .program__container {
+            .program__title-container {
+                h1 {
+                    font-size: 3.5rem;   
+                }
+            }
+        }    
+    }  
+}
+// MEDIA QUERIES (TITLE B.P.) -- END //
+
 // Media Queries -- START //
 @media only screen and (max-width: 575px) {
     .program {
         .program__container {
             .program__info-container {
-                .program__pricing-row {
-                    .program__pricing-col {
-                        .program__pricing-info {
-                            ul {
-                                font-size: 1.25rem;
-                                line-height: 2.5rem;
+                .program__promo-row {
+                    .program__promo-col {
+                        .program__promo-info {
+                            .promo__cta-input {
+                                width: 60%;
                             }
                         }
                     }
@@ -294,18 +310,10 @@
                                 p {
                                     font-size: 9vw;
                                 }
-                            }
+                            } 
                             .promo__cta-input {
-                                padding: 10px;
-                                input {
-                                    border: 1px solid transparent;
-                                    background-color: transparent;
-                                    margin-right: 0px;
-                                }
-                                a {
-                                    padding: 5px; 
-                                }
-                            }    
+                                width: 100%;
+                            }
                         }
                     }
                 }

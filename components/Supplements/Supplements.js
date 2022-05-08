@@ -14,49 +14,53 @@ export default function Supplements() {
                     </div>
                 </div>
                 <div className='supplements__items-container container'>
-                    <div className='supplements__items-row row'>
+                    <div className='supplements__items-row row g-3'>
                         <div className='supplements__items-title col-sm-12'>
                             <h2>Featured</h2>
                             <Link href="/">View More</Link>
                         </div>
-                        <div className='supplements__items-col col-sm-6 col-md-3'>
+                        <div className='supplements__items-col col-6 col-md-3'>
                             <div className='supplements__item'>
                                 <div className='supplements__item-img'>
-                                    <Image src="/on-1.jpg" alt="pic" width={425} height={425}/>
+                                    <img src="/on-1.jpg" alt="pic" />
                                 </div>
+                                <div className='supplements__item-divider'></div>
                                 <div className='supplements__item-info'>
                                     <p>Whey Protein</p>
                                     <p>$50.00</p>
                                 </div>
                             </div>
                         </div>
-                        <div className='supplements__items-col col-sm-6 col-md-3'>
+                        <div className='supplements__items-col col-6 col-md-3'>
                             <div className='supplements__item'>
                                 <div className='supplements__item-img'>
-                                    <Image src="/on-2.webp" alt="pic" width={425} height={425}/>
+                                    <img src="/on-2.webp" alt="pic" />
                                 </div>
+                                <div className='supplements__item-divider'></div>
                                 <div className='supplements__item-info'>
                                     <p>Pre-Workout</p>
                                     <p>$30.00</p>
                                 </div>
                             </div>
                         </div>
-                        <div className='supplements__items-col col-sm-6 col-md-3'>
+                        <div className='supplements__items-col col-6 col-md-3'>
                             <div className='supplements__item'>
                                 <div className='supplements__item-img'>
-                                    <Image src="/on-3.jpg" alt="pic" width={425} height={425}/>
+                                    <img src="/on-3.jpg" alt="pic" />
                                 </div>
+                                <div className='supplements__item-divider'></div>
                                 <div className='supplements__item-info'>
                                     <p>Creatine Capsules</p>
                                     <p>$45.00</p>
                                 </div>
                             </div>
                         </div>
-                        <div className='supplements__items-col col-sm-6 col-md-3'>
+                        <div className='supplements__items-col col-6 col-md-3'>
                             <div className='supplements__item'>
                                 <div className='supplements__item-img'>
-                                    <Image src="/on-4.jpg" alt="pic" width={425} height={425}/>
+                                    <img src="/on-4.jpg" alt="pic" />
                                 </div>
+                                <div className='supplements__item-divider'></div>
                                 <div className='supplements__item-info'>
                                     <p>Casein</p>
                                     <p>$40.00</p>

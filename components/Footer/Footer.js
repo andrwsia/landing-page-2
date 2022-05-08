@@ -9,7 +9,6 @@ export default function footer() {
                     <div className="footer__company-name col-sm-12">
                         <p>Company Name</p>
                     </div>
-                    
                     <div className="footer__content col-sm-12">
                         <div className="footer__top row">
                             <div className="footer__nav col-sm-4">
