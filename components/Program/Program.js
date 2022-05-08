@@ -22,19 +22,19 @@ export default function Program() {
                         <div className='program__info-col2 col-lg-6'>
                             <div className='program__col2-info'> 
                                 <p>Body Building</p>
-                                <Link href="/"><i class="fa-solid fa-arrow-right-from-bracket"></i></Link>
+                                <Link href="/"><i className="fa-solid fa-arrow-right-from-bracket"></i></Link>
                             </div>
                             <div className='program__col2-info'> 
                                 <p>Power Lifting</p>
-                                <Link href="/"><i class="fa-solid fa-arrow-right-from-bracket"></i></Link>
+                                <Link href="/"><i className="fa-solid fa-arrow-right-from-bracket"></i></Link>
                             </div>
                             <div className='program__col2-info'> 
                                 <p>Calisthenics</p>
-                                <Link href="/"><i class="fa-solid fa-arrow-right-from-bracket"></i></Link>
+                                <Link href="/"><i className="fa-solid fa-arrow-right-from-bracket"></i></Link>
                             </div>
                             <div className='program__col2-info'> 
                                 <p>Weight Loss</p>
-                                <Link href="/"><i class="fa-solid fa-arrow-right-from-bracket"></i></Link>
+                                <Link href="/"><i className="fa-solid fa-arrow-right-from-bracket"></i></Link>
                             </div>
                         </div>
                     </div>
@@ -78,9 +78,9 @@ export default function Program() {
                                 </div>
                                     <div className='pricing-divider'></div>
                                 <div className='pricing-benefits'>
-                                    <p><i class="fa-solid fa-circle-check"></i> 2 hours of practice</p>
-                                    <p><i class="fa-solid fa-circle-check"></i> Free consultation to coaches</p>
-                                    <p><i class="fa-solid fa-circle-check"></i> Access to the FitClub Community</p>
+                                    <p><i className="fa-solid fa-circle-check"></i> 2 hours of practice</p>
+                                    <p><i className="fa-solid fa-circle-check"></i> Free consultation to coaches</p>
+                                    <p><i className="fa-solid fa-circle-check"></i> Access to the FitClub Community</p>
                                 </div>
                                 <div className='pricing-link'>
                                     <Link href="/">Join Now</Link>
@@ -94,10 +94,10 @@ export default function Program() {
                                 </div>
                                     <div className='pricing-divider'></div>
                                 <div className='pricing-benefits'>
-                                    <p><i class="fa-solid fa-circle-check"></i> 5 hours of practice</p>
-                                    <p><i class="fa-solid fa-circle-check"></i> Free consultation to coaches</p>
-                                    <p><i class="fa-solid fa-circle-check"></i> Access to the FitClub Community</p>
-                                    <p><i class="fa-solid fa-circle-check"></i> Access to the minibar</p>
+                                    <p><i className="fa-solid fa-circle-check"></i> 5 hours of practice</p>
+                                    <p><i className="fa-solid fa-circle-check"></i> Free consultation to coaches</p>
+                                    <p><i className="fa-solid fa-circle-check"></i> Access to the FitClub Community</p>
+                                    <p><i className="fa-solid fa-circle-check"></i> Access to the minibar</p>
                                 </div>
                                 <div className='pricing-link'>
                                     <Link href="/">Join Now</Link>
@@ -111,11 +111,11 @@ export default function Program() {
                                 </div>
                                     <div className='pricing-divider'></div>
                                 <div className='pricing-benefits'>
-                                    <p><i class="fa-solid fa-circle-check"></i> 8 hours of practice</p>
-                                    <p><i class="fa-solid fa-circle-check"></i> Free consultation to private coaches</p>
-                                    <p><i class="fa-solid fa-circle-check"></i> Access to the FitClub Community</p>
-                                    <p><i class="fa-solid fa-circle-check"></i> Access to the minibar</p>
-                                    <p><i class="fa-solid fa-circle-check"></i> Free fitness merchandise</p>
+                                    <p><i className="fa-solid fa-circle-check"></i> 8 hours of practice</p>
+                                    <p><i className="fa-solid fa-circle-check"></i> Free consultation to private coaches</p>
+                                    <p><i className="fa-solid fa-circle-check"></i> Access to the FitClub Community</p>
+                                    <p><i className="fa-solid fa-circle-check"></i> Access to the minibar</p>
+                                    <p><i className="fa-solid fa-circle-check"></i> Free fitness merchandise</p>
 
                                 </div>
                                 <div className='pricing-link'>
@@ -132,7 +132,7 @@ export default function Program() {
                                 </div>
                                 <div className='promo__cta-input'>
                                     <input type="email" placeholder='Email Address'></input>
-                                    <Link href="/"><i class="fa-solid fa-arrow-right-from-bracket"></i></Link>  
+                                    <Link href="/"><i className="fa-solid fa-arrow-right-from-bracket"></i></Link>  
                                 </div>
                             </div>
                         </div>
